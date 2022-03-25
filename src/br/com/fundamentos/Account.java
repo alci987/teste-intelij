@@ -13,14 +13,11 @@ public class Account {
         }
     }
 
-    public void depositi(double depositAmount){
+    // método que deposita apenas quantia válida
+    public void deposit(double depositAmount){
         if (depositAmount > 0.0) {
             balance += depositAmount;
         }
-    }
-
-    public Account() {
-
     }
 
     // método para pegar o nome
@@ -37,7 +34,7 @@ public class Account {
         return balance;
     }
 
-    public void setBalance(double balance) {
+    /*public void setBalance(double balance) {
         this.balance = balance;
-    }
+    }*/
 }
